@@ -1,0 +1,89 @@
+@import '../../styles/variables.scss';
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 24px;
+    max-width: 599px;
+    margin: 0 auto;
+
+    .text {
+        text-align: center;
+        padding: 2rem;
+
+        .title {
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+
+            h1 {
+                margin-bottom: 2rem;
+            }
+
+        }
+
+
+    }
+
+    .loginForm {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            input {
+                background-color: $secondary-color;
+                width: 100%;
+                height: 40px;
+                border-radius: 0 5px 5px 0;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 1rem;
+            }
+
+            label {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .forgotPwd {
+                align-self: flex-end;
+                font-size: 14px;
+                color: $gray-text;
+            }
+        }
+
+        .loginBtn {
+            width: 200px;
+            margin: 0 auto;
+            font-size: 14px;
+            margin-top: 16px;
+        }
+    }
+
+    .signUpInstead {
+        text-align: center;
+        margin-top: 24px;
+
+        p {
+            margin-bottom: 24px;
+            font-size: 14px;
+            color: $gray-text;
+        }
+
+        button {
+            width: 180px;
+            margin: 0 auto;
+        }
+    }
+
+}

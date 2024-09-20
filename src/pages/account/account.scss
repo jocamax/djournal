@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+
+.accountContainer {
+    padding: 1rem;
+
+    h2 {
+        margin-bottom: 24px;
+        color: $white-gray;
+
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+        .statsItem {
+            text-align: center;
+            color: $white-gray;
+
+            h3 {
+                font-size: 28px;
+            }
+
+            p {
+                color: $gray-text;
+                font-size: 14px;
+            }
+
+        }
+    }
+}

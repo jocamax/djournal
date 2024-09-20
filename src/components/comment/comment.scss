@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.commentContainer {
+
+    background-color: $secondary-color;
+    margin: 4px 0;
+    padding: 12px;
+    border-radius: 5px;
+
+    .commentTop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .grayishText {
+        font-size: 0.9rem;
+        color: #b2b2b2;
+    }
+
+    .commentText {
+        font-size: 0.9rem;
+        margin-top: 6px;
+    }
+
+
+}

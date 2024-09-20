@@ -1,0 +1,79 @@
+@import '../../styles/variables.scss';
+
+.singleDreamContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    max-width: 768px;
+    margin: 0 auto;
+
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 16px;
+        margin-bottom: 5px;
+        border-bottom: 2px solid rgb(90, 92, 95);
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            h4 {
+                font-size: 18px;
+                max-width: 95%;
+                line-height: 1.4;
+                letter-spacing: 0.2px;
+            }
+
+
+            .dreamStats {
+                display: flex;
+                gap: 24px;
+            }
+
+
+
+
+            .lucidity {
+                font-size: 14px;
+                color: $gray-text;
+            }
+
+            .lucidityCircles {
+                display: flex;
+                gap: 4px;
+                font-size: 10px;
+
+
+
+                .circle {
+                    color: $gray-text;
+                }
+
+                .full {
+                    color: $green;
+                }
+
+            }
+        }
+
+        .right {
+
+            .date {
+                color: $gray-text;
+                min-width: 80px;
+            }
+        }
+
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 1.7;
+        letter-spacing: 0.2px;
+        margin-bottom: 1rem;
+        padding: 8px;
+    }
+}

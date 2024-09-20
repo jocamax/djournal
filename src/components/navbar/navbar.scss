@@ -1,0 +1,45 @@
+@import '../../styles/variables.scss';
+
+@media (max-width: 665px) {
+    .navContainer {
+        display: none;
+
+    }
+}
+
+.navContainer {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    .navItems {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {}
+
+        .items {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 26px;
+
+            .navItem {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                color: $inactive-gray;
+
+                &.active {
+                    color: $blue;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

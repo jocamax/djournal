@@ -1,0 +1,70 @@
+@import "../../styles/variables.scss";
+
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    max-width: 768px;
+    margin: 0 auto;
+
+    .search {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+
+        h2 {
+            margin-bottom: 16px;
+            color: rgb(231, 231, 231);
+
+        }
+
+        .searchInput {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .searchIcon {
+                background-color: $secondary-color;
+                border-radius: 5px 0 0 5px;
+                height: 40px;
+                width: 45px;
+                padding: 0 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+
+            input {
+                background-color: $secondary-color;
+                width: 100%;
+                height: 40px;
+                border-radius: 0 5px 5px 0;
+                border: none;
+                outline: none;
+                color: white;
+            }
+
+        }
+
+        select {
+            align-self: flex-end;
+            margin-top: 16px;
+            padding: 6px;
+            background-color: $background-color;
+            color: white;
+            border: 2px solid $secondary-color;
+            border-radius: 3px;
+            outline: none;
+        }
+    }
+
+    .dreamEntries {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
